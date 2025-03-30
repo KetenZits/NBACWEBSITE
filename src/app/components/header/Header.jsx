@@ -1,13 +1,23 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination"; // เพิ่ม import CSS ของ Pagination
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Header = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // ระยะเวลาของแอนิเมชัน (ms)
+      once: false, // ให้เล่นซ้ำเมื่อเลื่อนกลับมา
+      mirror: true, // เล่นซ้ำแม้ว่าองค์ประกอบจะออกจากหน้าจอแล้วกลับมา
+    });
+  }, []);
+
   const images = [
     "/img/slide/slide1.jpg",
     "/img/slide/slide2.jpg",
@@ -31,7 +41,10 @@ const Header = () => {
     shadow-lg
     "
     >
-      <div className="container mx-auto max-w-[1320px] py-10 text-center">
+      <div
+        className="container mx-auto max-w-[1320px] py-10 text-center"
+        data-aos="fade-up"
+      >
         <Swiper
           modules={[Autoplay, Pagination]}
           spaceBetween={10}

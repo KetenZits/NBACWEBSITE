@@ -6,8 +6,9 @@ import "aos/dist/aos.css";
 const Navbar = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // ระยะเวลาของแอนิเมชัน (1 วินาที)
-      once: true, // ให้เล่นแอนิเมชันแค่ครั้งเดียว
+      duration: 1000, // ระยะเวลาของแอนิเมชัน (ms)
+      once: false, // ให้เล่นซ้ำเมื่อเลื่อนกลับมา
+      mirror: true, // เล่นซ้ำแม้ว่าองค์ประกอบจะออกจากหน้าจอแล้วกลับมา
     });
   }, []);
 
@@ -18,7 +19,10 @@ const Navbar = () => {
   return (
     <div className="z-50">
       <div className="flex justify-evenly items-center p-2 background-color-white shadow-xl max-h-[110px]">
-        <div className="flex justify-center items-center space-x-2">
+        <div
+          className="flex justify-center items-center space-x-2"
+          data-aos="fade-right"
+        >
           <img src={logo} alt="logo" className="max-w-[65px] lg:max-w-[85px]" />
           <h1 className="bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent text-[16px] lg:text-xl font-bold">
             Nakprasite Bussiness <br />
@@ -27,7 +31,10 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center justify-center space-x-2">
-          <ul className="font-semibold text-lg hidden lg:flex justify-between items-center space-x-4">
+          <ul
+            className="font-semibold text-lg hidden lg:flex justify-between items-center space-x-4"
+            data-aos="fade-left"
+          >
             <li>
               <a href="#" className="hover:text-gray-500 transition">
                 เกี่ยวกับวิทยาลัย
