@@ -94,10 +94,7 @@ const Navbar = () => {
         </div>
 
         {isOpen && (
-          <div
-            className="absolute top-[80px] left-0 w-full bg-white shadow-xl z-50"
-            data-aos="fade-down"
-          >
+          <div className="absolute top-[80px] left-0 w-full bg-white shadow-xl z-50">
             <ul className="flex flex-col items-center space-y-4 py-4 text-[18px] font-semibold">
               <li>
                 <a href="#" className="hover:text-gray-800 transition">
@@ -120,7 +117,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="btn btn-info">
+                <a href="#" className="btn btn-info text-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

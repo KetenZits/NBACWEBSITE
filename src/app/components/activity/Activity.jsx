@@ -225,7 +225,7 @@ const Activity = () => {
           </div>
 
           <div
-            className="stats stats-vertical lg:stats-horizontal shadow-xl mx-5"
+            className="stats stats-vertical lg:stats-horizontal shadow-xl mx-5 h-[250px]"
             data-aos="fade-up"
           >
             <div className="stat">
