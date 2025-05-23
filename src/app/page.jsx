@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import SplitText from "./components/SplitText/SplitText";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useRouter } from "next/navigation";
@@ -49,14 +50,32 @@ export default function WelcomePage() {
             data-aos-delay="250"
             className="text-xl sm:text-3xl lg:text-5xl font-bold mb-4 text-pink-400"
           >
-            WELCOME TO
+            <SplitText
+              text="WELCOME TO"
+              className="font-semibold text-center"
+              delay={150}
+              animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+              animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+              easing="easeOutCubic"
+              threshold={0.2}
+              rootMargin="-50px"
+            />
           </h1>
           <p
             data-aos="fade-up"
             data-aos-delay="350"
             className="text-[16px] sm:text-xl mb-8 text-blue-400"
           >
-            NBAC WEBSITE
+            <SplitText
+              text="NBAC WEBSITE"
+              className="font-semibold text-center"
+              delay={150}
+              animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+              animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+              easing="easeOutCubic"
+              threshold={0.2}
+              rootMargin="-50px"
+            />
           </p>
           <button
             onClick={() => router.push("./home")}
