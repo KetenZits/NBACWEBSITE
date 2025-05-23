@@ -46,7 +46,7 @@ const Header = () => {
         className="container mx-auto max-w-[1320px] py-10 text-center"
         data-aos="fade-up"
       >
-        <div className="flex flex-col justify-center lg:flex-row items-center h-[350px] mx-2">
+        <div className="flex flex-col justify-center lg:flex-row items-center h-[300px] mx-2">
           <img
             src={logo}
             alt="logo"

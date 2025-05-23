@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-spring/web": "^10.0.1",
     "aos": "^2.3.4",
     "daisyui": "^5.0.9",
     "framer-motion": "^12.6.2",
