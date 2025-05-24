@@ -33,7 +33,7 @@ const Header = () => {
     <div
       className="
     min-h-[80vh]
-    bg-[linear-gradient(to_bottom,rgba(255,255,255,0.9),rgba(255,255,255,0)),url('/img/background/background4.jpg')]
+    bg-[linear-gradient(to_bottom,rgba(255,255,255,1),rgba(255,255,255,0)),url('/img/background/background4.jpg')]
     bg-cover
     bg-fixed
     bg-center

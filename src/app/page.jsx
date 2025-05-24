@@ -30,26 +30,17 @@ export default function WelcomePage() {
     >
       <div
         className="flex justify-center items-center flex-col 
-      bg-[url(/img/banner/banner.jfif)]
-      bg-opacity-50
-      bg-cover 
-      bg-fixed 
-      bg-center 
-      bg-no-repeat 
+      bg-blue-400/40
       rounded-2xl px-15 py-25 sm:px-20 sm:py-15 ring-2 ring-blue-500/50"
       >
-        <div className="flex flex-col items-center justify-center bg-white px-10 py-10 rounded-2xl shadow-lg ring-2 ring-blue-500/50">
+        <div className="flex flex-col items-center justify-center bg-pink-400/40 px-10 py-10 rounded-2xl shadow-lg ring-2 ring-pink-500/50">
           <img
             src={logo}
             alt="logo"
             className="max-w-[100px] lg:max-w-[150px] relative -top-[20px]"
             data-aos="fade-down"
           />
-          <h1
-            data-aos="fade-down"
-            data-aos-delay="250"
-            className="text-xl sm:text-3xl lg:text-5xl font-bold mb-4 text-pink-400"
-          >
+          <h1 className="text-xl sm:text-3xl lg:text-5xl font-bold mb-4 text-white">
             <SplitText
               text="WELCOME TO"
               className="font-semibold text-center"
@@ -61,11 +52,7 @@ export default function WelcomePage() {
               rootMargin="-50px"
             />
           </h1>
-          <p
-            data-aos="fade-up"
-            data-aos-delay="350"
-            className="text-[16px] sm:text-xl mb-8 text-blue-400"
-          >
+          <div className="text-[16px] sm:text-xl mb-8 text-white">
             <SplitText
               text="NBAC WEBSITE"
               className="font-semibold text-center"
@@ -76,11 +63,11 @@ export default function WelcomePage() {
               threshold={0.2}
               rootMargin="-50px"
             />
-          </p>
+          </div>
           <button
             onClick={() => router.push("./home")}
             data-aos="zoom-in"
-            className="bg-white text-black font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 transition animate-bounce"
+            className="bg-white text-blue-400 hover:text-pink-400 font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 transition animate-bounce ring-2 ring-blue-500/50 hover:ring-pink-500/50"
             data-aos-delay="450"
           >
             เข้าสู่เว็บไซต์
