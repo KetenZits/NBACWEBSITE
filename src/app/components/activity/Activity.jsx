@@ -53,7 +53,7 @@ const Activity = () => {
           data-aos="zoom-in"
         >
           <div
-            className="card bg-base-100 w-80 shadow-sm"
+            className="card bg-base-100 w-80 shadow-sm ring-2 ring-pink-500/50"
             data-aos="zoom-in"
             data-aos-delay="500"
           >
@@ -71,13 +71,15 @@ const Activity = () => {
                 there are title and actions parts
               </p>
               <div className="card-actions mt-3">
-                <button className="btn btn-info text-white">ดูเพิ่มเติม</button>
+                <button className="btn btn-info text-white hover:btn-error">
+                  ดูเพิ่มเติม
+                </button>
               </div>
             </div>
           </div>
 
           <div
-            className="card bg-base-100 w-80 shadow-sm"
+            className="card bg-base-100 w-80 shadow-sm ring-2 ring-pink-500/50"
             data-aos="zoom-in"
             data-aos-delay="500"
           >
@@ -95,13 +97,15 @@ const Activity = () => {
                 there are title and actions parts
               </p>
               <div className="card-actions mt-3">
-                <button className="btn btn-info text-white">ดูเพิ่มเติม</button>
+                <button className="btn btn-info text-white hover:btn-error">
+                  ดูเพิ่มเติม
+                </button>
               </div>
             </div>
           </div>
 
           <div
-            className="card bg-base-100 w-80 shadow-sm"
+            className="card bg-base-100 w-80 shadow-sm ring-2 ring-pink-500/50"
             data-aos="zoom-in"
             data-aos-delay="500"
           >
@@ -119,7 +123,9 @@ const Activity = () => {
                 there are title and actions parts
               </p>
               <div className="card-actions mt-3">
-                <button className="btn btn-info text-white">ดูเพิ่มเติม</button>
+                <button className="btn btn-info text-white hover:btn-error">
+                  ดูเพิ่มเติม
+                </button>
               </div>
             </div>
           </div>

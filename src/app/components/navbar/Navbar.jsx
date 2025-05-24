@@ -13,7 +13,8 @@ const Navbar = () => {
   }, []);
 
   const logo = "/img/logo/logo.png";
-
+  const linkClass =
+    "relative inline-block text-black transition-all duration-300 ease-in-out hover:scale-105 hover:text-blue-600 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-600 after:transition-all hover:after:w-full";
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -36,22 +37,22 @@ const Navbar = () => {
             data-aos="fade-left"
           >
             <li>
-              <a href="#" className="hover:text-gray-500 transition">
+              <a href="#" className={linkClass}>
                 เกี่ยวกับวิทยาลัย
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-500 transition">
+              <a href="#" className={linkClass}>
                 หลักสูตรการศึกษา
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-500 transition">
+              <a href="#" className={linkClass}>
                 แผนกต่างๆ
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-500 transition">
+              <a href="#" className={linkClass}>
                 ผลงาน
               </a>
             </li>
@@ -101,22 +102,22 @@ const Navbar = () => {
           >
             <ul className="flex flex-col items-center space-y-4 py-4 text-[18px] font-semibold">
               <li>
-                <a href="#" className="hover:text-gray-800 transition">
+                <a href="#" className={linkClass}>
                   เกี่ยวกับวิทยาลัย
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-800 transition">
+                <a href="#" className={linkClass}>
                   หลักสูตรการศึกษา
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-800 transition">
+                <a href="#" className={linkClass}>
                   แผนกต่างๆ
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-800 transition">
+                <a href="#" className={linkClass}>
                   ผลงาน
                 </a>
               </li>

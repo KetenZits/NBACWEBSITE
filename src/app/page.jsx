@@ -64,14 +64,14 @@ export default function WelcomePage() {
               rootMargin="-50px"
             />
           </div>
-          <button
+          <a
             onClick={() => router.push("./home")}
             data-aos="zoom-in"
-            className="bg-white text-blue-400 hover:text-pink-400 font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 transition animate-bounce ring-2 ring-blue-500/50 hover:ring-pink-500/50"
+            className="bg-white text-blue-400 hover:text-pink-400 cursor-pointer font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 transition animate-bounce ring-2 ring-blue-500/50 hover:ring-pink-500/50"
             data-aos-delay="450"
           >
             เข้าสู่เว็บไซต์
-          </button>
+          </a>
         </div>
       </div>
     </main>

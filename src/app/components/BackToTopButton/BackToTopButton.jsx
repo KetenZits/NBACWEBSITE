@@ -1,15 +1,14 @@
 "use client";
 
-// components/BackToTopButton.js
 import { useEffect, useState } from "react";
-import { ArrowUp } from "lucide-react"; // หรือใช้ icon อื่นก็ได้
+import { ArrowUp } from "lucide-react";
 
 export default function BackToTopButton() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setShow(window.scrollY > 200); // แสดงปุ่มเมื่อ scroll เกิน 200px
+      setShow(window.scrollY > 200);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);

@@ -52,7 +52,7 @@ const Header = () => {
             alt="logo"
             className="max-w-[100px] lg:max-w-[150px]"
           />
-          <h1 className="bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent text-4xl lg:text-6xl font-bold lg:ml-5 py-2">
+          <h1 className="bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent text-4xl lg:text-6xl font-bold lg:ml-5 py-2 drop-shadow-[0_0_2px_black] leading-tight">
             Nakprasith Bussiness <br />
             Administration College
           </h1>
@@ -67,7 +67,7 @@ const Header = () => {
             disableOnInteraction: false, // ให้ล็อปต่อเนื่องแม้มีการกดสไลด์
           }}
           loop={true}
-          className="w-9/12 mx-auto border-4 border-white rounded-3xl"
+          className="w-9/12 mx-auto ring-4 ring-blue-400/50 rounded-3xl"
         >
           {images.map((image, index) => (
             <SwiperSlide key={index}>
