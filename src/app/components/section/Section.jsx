@@ -55,7 +55,7 @@ const Section = () => {
         >
           <div>
             <div
-              className="card bg-base-300 w-75 lg:w-86 shadow-xl p-4 ring-2 ring-blue-500/50"
+              className="card bg-base-100 w-75 lg:w-86 shadow-xl p-4 ring-2 ring-blue-500/50"
               data-aos="zoom-in"
               data-aos-delay="500"
             >

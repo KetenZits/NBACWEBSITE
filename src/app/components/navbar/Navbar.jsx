@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   useEffect(() => {
@@ -11,6 +12,8 @@ const Navbar = () => {
       mirror: true, // เล่นซ้ำแม้ว่าองค์ประกอบจะออกจากหน้าจอแล้วกลับมา
     });
   }, []);
+
+  const router = useRouter();
 
   const logo = "/img/logo/logo.png";
   const linkClass =
@@ -26,8 +29,10 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="max-w-[65px] lg:max-w-[85px]" />
           <h1 className="bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent text-[16px] lg:text-xl font-bold">
-            วิทยาลัยเทคโนโลยี <br />
-            นาคประสิทธิ์บริหารธุรกิจ
+            <a href="#" onClick={() => router.push("./home")}>
+              วิทยาลัยเทคโนโลยี <br />
+              นาคประสิทธิ์บริหารธุรกิจ
+            </a>
           </h1>
         </div>
 
@@ -37,27 +42,27 @@ const Navbar = () => {
             data-aos="fade-left"
           >
             <li>
-              <a href="#" className={linkClass}>
+              <a href="/detail" className={linkClass}>
                 เกี่ยวกับวิทยาลัย
               </a>
             </li>
             <li>
-              <a href="#" className={linkClass}>
+              <a href="/majo" className={linkClass}>
                 หลักสูตรการศึกษา
               </a>
             </li>
             <li>
-              <a href="#" className={linkClass}>
+              <a href="/department" className={linkClass}>
                 แผนกต่างๆ
               </a>
             </li>
             <li>
-              <a href="#" className={linkClass}>
+              <a href="/trophy" className={linkClass}>
                 ผลงาน
               </a>
             </li>
             <a
-              href=""
+              href="/contact"
               className="btn btn-info text-[16px] text-white hidden lg:flex"
             >
               <svg
@@ -102,22 +107,22 @@ const Navbar = () => {
           >
             <ul className="flex flex-col items-center space-y-4 py-4 text-[18px] font-semibold">
               <li>
-                <a href="#" className={linkClass}>
+                <a href="/detail" className={linkClass}>
                   เกี่ยวกับวิทยาลัย
                 </a>
               </li>
               <li>
-                <a href="#" className={linkClass}>
+                <a href="/majo" className={linkClass}>
                   หลักสูตรการศึกษา
                 </a>
               </li>
               <li>
-                <a href="#" className={linkClass}>
+                <a href="/department" className={linkClass}>
                   แผนกต่างๆ
                 </a>
               </li>
               <li>
-                <a href="#" className={linkClass}>
+                <a href="/trophy" className={linkClass}>
                   ผลงาน
                 </a>
               </li>
