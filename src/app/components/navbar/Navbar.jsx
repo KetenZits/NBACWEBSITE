@@ -127,7 +127,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="btn btn-info text-white">
+                <a href="/contact" className="btn btn-info text-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
