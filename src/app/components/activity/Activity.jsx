@@ -41,7 +41,7 @@ const Activity = () => {
         <div className="flex w-full flex-col">
           <div className="card rounded-box grid h-20 place-items-center"></div>
           <div
-            className="divider divider-info text-4xl lg:text-6xl font-bold text-cyan-700"
+            className="divider divider-info text-4xl lg:text-6xl font-bold bg-gradient-to-r from-pink-400 to-blue-400 bg-clip-text text-transparent py-8"
             data-aos="fade-up"
           >
             Activity
@@ -49,7 +49,7 @@ const Activity = () => {
           <div className="card rounded-box grid h-20 place-items-center"></div>
         </div>
         <div
-          className="grid grid-cols-1 lg:grid-cols-3 gap-5 place-items-center justify-center items-center bg-blue-300/40 rounded-2xl py-10 px-5 mt-10 ring-2 ring-blue-500/50"
+          className="grid grid-cols-1 lg:grid-cols-3 gap-5 place-items-center justify-center items-center bg-gradient-to-r from-pink-200 to-blue-200 rounded-2xl py-10 px-5 mt-10 ring-2 ring-blue-500/50"
           data-aos="zoom-in"
         >
           <div
@@ -134,7 +134,7 @@ const Activity = () => {
         <div className="flex w-full flex-col">
           <div className="card rounded-box grid h-20 place-items-center"></div>
           <div
-            className="divider divider-info text-4xl lg:text-6xl font-bold text-cyan-700"
+            className="divider divider-info text-4xl lg:text-6xl font-bold bg-gradient-to-r from-pink-400 to-blue-400 bg-clip-text text-transparent py-8"
             data-aos="fade-up"
           >
             Announcement
@@ -222,7 +222,7 @@ const Activity = () => {
           <div className="flex w-full flex-col">
             <div className="card rounded-box grid h-20 place-items-center"></div>
             <div
-              className="divider divider-info text-4xl lg:text-6xl font-bold text-cyan-700"
+              className="divider divider-info text-4xl lg:text-6xl font-bold bg-gradient-to-r from-pink-400 to-blue-400 bg-clip-text text-transparent py-8"
               data-aos="fade-up"
             >
               Status

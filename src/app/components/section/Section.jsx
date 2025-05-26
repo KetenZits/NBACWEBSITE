@@ -22,10 +22,7 @@ const Section = () => {
     <div
       className="
     inset-shadow-md 
-    bg-[url(/img/background/background3.png)] 
-    bg-cover
-    bg-fixed
-    bg-center bg-no-repeat"
+    bg-gradient-to-r from-pink-100 via-white to-blue-100"
     >
       <div className="container max-w-[1320px] mx-auto py-10">
         <div className="flex w-full flex-col">
@@ -37,7 +34,7 @@ const Section = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.0}
               stroke="currentColor"
-              className="size-75 text-cyan-700"
+              className="size-75 text-blue-400"
             >
               <path
                 strokeLinecap="round"
@@ -50,7 +47,7 @@ const Section = () => {
         </div>
 
         <div
-          className="bg-blue-300/40 rounded-2xl flex justify-center flex-col items-center py-10 mt-10 ring-2 ring-blue-500/50"
+          className="bg-gradient-to-r from-pink-200 to-blue-200 rounded-2xl flex justify-center flex-col items-center py-10 mt-10 ring-2 ring-blue-500/50"
           data-aos="zoom-in"
         >
           <div>

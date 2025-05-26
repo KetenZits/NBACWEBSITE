@@ -47,7 +47,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="/majo" className={linkClass}>
+              <a href="/major" className={linkClass}>
                 หลักสูตรการศึกษา
               </a>
             </li>
@@ -112,7 +112,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="/majo" className={linkClass}>
+                <a href="/major" className={linkClass}>
                   หลักสูตรการศึกษา
                 </a>
               </li>

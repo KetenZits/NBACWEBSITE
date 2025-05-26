@@ -10,33 +10,40 @@ import Link from "next/link";
 
 const page = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-
   const testimonials = [
-    {
-      id: 1,
-      image: "/api/placeholder/600/400",
-      quote:
-        "Bishop Foley gives each student the opportunity to thrive in and out of the classrooms. Both the staff and students are very goal oriented and are driven to aspire to greatness all while being authentically Catholic. The curriculum is challenging and the teachers know just how to help students due to the smaller class sizes.",
-      author: "Violet Potempski",
-      class: "Class of '23",
-    },
-    {
-      id: 2,
-      image: "/api/placeholder/600/400",
-      quote:
-        "When I first shadowed BFC, I enjoyed the feel of the school … They had all the clubs and activities I wanted. Since attending Foley, I've made many friends and have done activities I didn't think I would do.",
-      author: "Maddy Kubacki",
-      class: "Class of '24",
-    },
-    {
-      id: 3,
-      image: "/api/placeholder/600/400",
-      quote:
-        "The community at Bishop Foley is unlike any other. The support from teachers and the lifelong friendships I've made here have shaped who I am today. I couldn't imagine my high school experience anywhere else.",
-      author: "Sarah Smith",
-      class: "Class of '26",
-    },
-  ];
+  {
+    id: 1,
+    image: "/img/background/background5.jpg",
+    quote:
+      "การเรียนในสาขาการบัญชีทำให้ข้าพเจ้าได้พัฒนาทักษะด้านการจัดการบัญชีและวางแผนทางการเงินอย่างมีระบบ ด้วยการเรียนรู้ทั้งภาคทฤษฎีและภาคปฏิบัติจากอาจารย์ผู้มีประสบการณ์ ทำให้สามารถประยุกต์ใช้ความรู้ในสถานการณ์จริงได้อย่างมั่นใจ",
+    author: "สาขาการบัญชี",
+    class: "บริหารธุรกิจ",
+  },
+  {
+    id: 2,
+    image: "/img/background/background5.jpg",
+    quote:
+      "สาขาการเทคโนโลยีสารสนเทศและอุตสาหกรรมดิจิทัลมีหลักสูตรที่ทันสมัย ครอบคลุมเนื้อหาทางด้านไอทีอย่างครบถ้วน ทั้งการเขียนโปรแกรม การออกแบบระบบ และการวิเคราะห์ข้อมูล ซึ่งช่วยเสริมสร้างทักษะที่จำเป็นต่อการทำงานในยุคดิจิทัลได้เป็นอย่างดี",
+    author: "สาขาการเทคโนโลยีสารสนเทศและอุตสาหกรรมดิจิตัล",
+    class: "บริหารธุรกิจ",
+  },
+  {
+    id: 3,
+    image: "/img/background/background5.jpg",
+    quote:
+      "สาขาการตลาดเปิดโอกาสให้นักเรียนได้เรียนรู้กลยุทธ์ทางการตลาด การวางแผนธุรกิจ และการบริหารแบรนด์ ผ่านการทำโครงการและกิจกรรมที่หลากหลาย ช่วยพัฒนาทักษะการคิดวิเคราะห์และความคิดสร้างสรรค์ให้สามารถต่อยอดได้ในอนาคต",
+    author: "สาขาการตลาด",
+    class: "บริหารธุรกิจ",
+  },
+  {
+    id: 4,
+    image: "/img/background/background5.jpg",
+    quote:
+      "การเรียนในสาขาคหกรรมเปิดโอกาสให้นักเรียนได้ฝึกฝนทักษะด้านงานบ้าน งานฝีมือ และการประกอบอาหารอย่างมืออาชีพ โดยเน้นทั้งความรู้ภาคทฤษฎีและการปฏิบัติจริง ซึ่งเป็นพื้นฐานสำคัญในการประกอบอาชีพและดูแลครอบครัวได้อย่างมีคุณภาพ",
+    author: "สาขาคหกรรม",
+    class: "อุตสาหกรรม",
+  },
+];
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % testimonials.length);
@@ -57,7 +64,7 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <div className="relative min-h-screen bg-gradient-to-br from-blue-500/50 via-pink-400/50 to-blue-400/50 overflow-hidden">
+      <div className="relative min-h-screen bg-gradient-to-br from-white via-blue-400/25 to-pink-300/35 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,white_1px,transparent_0)] bg-[length:50px_50px]"></div>
@@ -83,11 +90,11 @@ const page = () => {
                 >
                   {testimonials.map((testimonial, index) => (
                     <div key={testimonial.id} className="min-w-full">
-                      <div className="flex flex-col lg:flex-row items-center gap-12 p-8">
+                      <div className="flex flex-col w-7/12 sm:w-full mx-auto lg:flex-row items-center gap-12 p-8">
                         {/* Image Section */}
                         <div className="w-full lg:w-1/2">
                           <div className="relative group">
-                            <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-2xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+                            <div className="absolute inset-0 bg-gradient-to-r from-pink-400 to-blue-500 rounded-2xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
                             <img
                               src={testimonial.image}
                               alt={`Testimonial from ${testimonial.author}`}
@@ -100,22 +107,22 @@ const page = () => {
                         <div className="w-full lg:w-1/2 text-white">
                           <div className="relative">
                             {/* Quote Content */}
-                            <blockquote className="text-xl lg:text-2xl leading-relaxed mb-8 font-light text-gray-100">
-                              {testimonial.quote}
-                            </blockquote>
-
                             {/* Author Info */}
                             <div className="flex items-center gap-4">
-                              <div className="h-12 w-1 bg-gradient-to-b from-yellow-400 to-orange-500 rounded-full"></div>
+                              <div className="h-12 w-1 bg-gradient-to-b from-blue-400 to-pink-500 rounded-full"></div>
                               <div>
-                                <p className="text-yellow-400 font-semibold text-lg">
+                                <p className="text-blue-600 font-semibold text-lg">
                                   {testimonial.author}
                                 </p>
-                                <p className="text-gray-400 text-sm font-light">
+                                <p className="text-pink-400 text-sm font-light">
                                   {testimonial.class}
                                 </p>
                               </div>
                             </div>
+                            <blockquote className="text-xl lg:text-2xl leading-relaxed mb-8 font-light text-pink-400">
+                              {testimonial.quote}
+                            </blockquote>
+
                           </div>
                         </div>
                       </div>
@@ -127,7 +134,7 @@ const page = () => {
               {/* Navigation Arrows */}
               <button
                 onClick={prevSlide}
-                className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 backdrop-blur-md border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 group z-30"
+                className="hidden absolute sm:left-10 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 backdrop-blur-md border border-white/20 rounded-full sm:flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 group z-30"
               >
                 <svg
                   className="w-6 h-6 group-hover:-translate-x-1 transition-transform duration-300"
@@ -146,7 +153,7 @@ const page = () => {
 
               <button
                 onClick={nextSlide}
-                className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 backdrop-blur-md border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 group z-30"
+                className="hidden absolute sm:right-10 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 backdrop-blur-md border border-white/20 rounded-full sm:flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 group z-30"
               >
                 <svg
                   className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300"
