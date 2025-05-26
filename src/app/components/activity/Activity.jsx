@@ -53,7 +53,7 @@ const Activity = () => {
           data-aos="zoom-in"
         >
           <div
-            className="card bg-base-100 w-80 shadow-sm ring-2 ring-blue-500/50"
+            className="card bg-white/30 backdrop-blur-md w-80 shadow-sm ring-2 ring-white/80"
             data-aos="zoom-in"
             data-aos-delay="500"
           >
@@ -65,13 +65,15 @@ const Activity = () => {
               />
             </figure>
             <div className="card-body items-center text-center">
-              <h2 className="card-title">กิจกรรมเข้าค่ายลูกเสือ</h2>
-              <p>
+              <h2 className="card-title font-extrabold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]">
+                กิจกรรมเข้าค่ายลูกเสือ
+              </h2>
+              <p className="font-bold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]">
                 A card component has a figure, a body part, and inside body
                 there are title and actions parts
               </p>
               <div className="card-actions mt-3">
-                <button className="btn btn-info text-white hover:scale-110 transition">
+                <button className="btn text-white hover:scale-110 transition bg-gradient-to-r from-fuchsia-400 to-blue-400">
                   ดูเพิ่มเติม
                 </button>
               </div>
@@ -79,7 +81,7 @@ const Activity = () => {
           </div>
 
           <div
-            className="card bg-base-100 w-80 shadow-sm ring-2 ring-blue-500/50"
+            className="card bg-white/30 backdrop-blur-md w-80 shadow-sm ring-2 ring-white/80"
             data-aos="zoom-in"
             data-aos-delay="500"
           >
@@ -91,13 +93,15 @@ const Activity = () => {
               />
             </figure>
             <div className="card-body items-center text-center">
-              <h2 className="card-title">กิจกรรมปัจฉิมนิเทศ</h2>
-              <p>
+              <h2 className="card-title font-extrabold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]">
+                กิจกรรมปัจฉิมนิเทศ
+              </h2>
+              <p className="font-bold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]">
                 A card component has a figure, a body part, and inside body
                 there are title and actions parts
               </p>
               <div className="card-actions mt-3">
-                <button className="btn btn-info text-white hover:scale-110 transition">
+                <button className="btn text-white hover:scale-110 transition bg-gradient-to-r from-fuchsia-400 to-blue-400">
                   ดูเพิ่มเติม
                 </button>
               </div>
@@ -105,7 +109,7 @@ const Activity = () => {
           </div>
 
           <div
-            className="card bg-base-100 w-80 shadow-sm ring-2 ring-blue-500/50"
+            className="card bg-white/30 backdrop-blur-md w-80 shadow-sm ring-2 ring-white/80"
             data-aos="zoom-in"
             data-aos-delay="500"
           >
@@ -117,13 +121,15 @@ const Activity = () => {
               />
             </figure>
             <div className="card-body items-center text-center">
-              <h2 className="card-title">กิจกรรมวันเด็กแห่งชาติ</h2>
-              <p>
+              <h2 className="card-title font-extrabold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]">
+                กิจกรรมวันเด็กแห่งชาติ
+              </h2>
+              <p className="font-bold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]">
                 A card component has a figure, a body part, and inside body
                 there are title and actions parts
               </p>
               <div className="card-actions mt-3">
-                <button className="btn btn-info text-white hover:scale-110 transition">
+                <button className="btn text-white hover:scale-110 transition bg-gradient-to-r from-fuchsia-400 to-blue-400">
                   ดูเพิ่มเติม
                 </button>
               </div>
@@ -160,7 +166,7 @@ const Activity = () => {
           >
             <div
               aria-label="info"
-              className="status status-primary mr-5 animate-ping"
+              className="status status-primary mr-5 animate-ping "
             ></div>
             ข่าวประชาสัมพันธ์
             <div
@@ -169,7 +175,7 @@ const Activity = () => {
             ></div>
           </h2>
           <div
-            className="text-center text-xl lg:text-2xl font-semibold bg-white rounded-2xl p-3 ring-blue-500/50 ring-2"
+            className="text-center text-xl lg:text-2xl font-semibold bg-white/30 backdrop-blur-md rounded-2xl p-3 ring-white/80 ring-2"
             data-aos="zoom-in"
             data-aos-delay="500"
           >
@@ -316,7 +322,9 @@ const Activity = () => {
                   />
                 </svg>
               </div>
-              <div className="stat-title">นักเรียนทั้งหมด</div>
+              <div className="stat-title bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent">
+                นักเรียนทั้งหมด
+              </div>
               <div className="stat-value text-4xl">
                 <CountUp
                   from={0}
@@ -324,10 +332,12 @@ const Activity = () => {
                   separator=","
                   direction="up"
                   duration={1}
-                  className="count-up-text"
+                  className="count-up-text bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent"
                 />
               </div>
-              <div className="stat-desc text-secondary">Total All</div>
+              <div className="stat-desc bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent">
+                Total All
+              </div>
               <div className="stat-desc text-secondary">
                 {" "}
                 <div

@@ -47,23 +47,23 @@ const Section = () => {
         </div>
 
         <div
-          className="bg-gradient-to-r from-pink-200 to-blue-200 rounded-2xl flex justify-center flex-col items-center py-10 mt-10 ring-2 ring-blue-500/50"
+          className="bg-gradient-to-r from-pink-200 to-blue-200 rounded-2xl flex justify-around flex-col xl:flex-row text-wrap items-center py-10 mt-10 ring-2 ring-white/80"
           data-aos="zoom-in"
         >
           <div>
             <div
-              className="card bg-base-100 w-75 lg:w-86 shadow-xl p-4 ring-2 ring-blue-500/50"
+              className="card bg-white/30 backdrop-blur-md w-75 lg:w-86 shadow-xl p-4 ring-2 ring-white/80"
               data-aos="zoom-in"
               data-aos-delay="500"
             >
-              <figure className="rounded-xl">
+              <figure className="rounded-xl ring-white/80">
                 <img src="/img/leader/leader.jpg" alt="Shoes" />
               </figure>
               <div className="card-body h-40 flex flex-col justify-center items-center">
-                <h2 className="card-title text-xl lg:text-2xl text">
+                <h2 className="card-title text-xl lg:text-2xl bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]">
                   นายสมบัติ ธรรมนาถพงศ์
                 </h2>
-                <div className="text-center text-[16px] lg:text-xl">
+                <div className="text-center text-[16px] lg:text-xl bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]">
                   ผู้อำนวยการ
                   <br />
                   วิทยาลัยเทคโนโลยีนาคประสิทธิ์ <br /> บริการธุรกิจ
@@ -74,30 +74,31 @@ const Section = () => {
           <div className="mt-5">
             <div className="mt-4">
               <h2
-                className="text-4xl lg:text-5xl font-bold text-cyan-700 text-center"
+                className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent text-center drop-shadow-[0_0_2px_white]"
                 data-aos="zoom-in"
                 data-aos-delay="600"
               >
                 วิสัยทัศน์
               </h2>
               <div
-                className="text-center text-2xl lg:text-3xl mt-3 font-semibold text-cyan-600"
+                className="text-center text-2xl lg:text-3xl mt-3 font-semibold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]"
                 data-aos="zoom-in"
                 data-aos-delay="750"
               >
-                สร้างเสริมคุณธรรม ก้าวนำการเรียนรู้ พัฒนาสู่มาตรฐานวิชาชีพ
+                สร้างเสริมคุณธรรม ก้าวนำการเรียนรู้ <br />{" "}
+                พัฒนาสู่มาตรฐานวิชาชีพ
               </div>
             </div>
             <div className="mt-4">
               <h2
-                className="text-4xl lg:text-5xl font-bold text-cyan-700 text-center"
+                className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent text-center drop-shadow-[0_0_2px_white]"
                 data-aos="zoom-in"
                 data-aos-delay="600"
               >
                 ปรัชญา
               </h2>
               <div
-                className="text-center text-2xl lg:text-3xl mt-3 font-semibold text-cyan-600"
+                className="text-center text-2xl lg:text-3xl mt-3 font-semibold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]"
                 data-aos="zoom-in"
                 data-aos-delay="750"
               >
@@ -106,14 +107,14 @@ const Section = () => {
             </div>
             <div className="mt-4">
               <h2
-                className="text-4xl lg:text-5xl font-bold text-cyan-700 text-center"
+                className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent text-center drop-shadow-[0_0_2px_white]"
                 data-aos="zoom-in"
                 data-aos-delay="600"
               >
                 อัตลักษณ์
               </h2>
               <div
-                className="text-center text-2xl lg:text-3xl mt-3 font-semibold text-cyan-600"
+                className="text-center text-2xl lg:text-3xl mt-3 font-semibold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]"
                 data-aos="zoom-in"
                 data-aos-delay="750"
               >
@@ -122,14 +123,14 @@ const Section = () => {
             </div>
             <div className="mt-4">
               <h2
-                className="text-4xl lg:text-5xl font-bold text-cyan-700 text-center"
+                className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent text-center drop-shadow-[0_0_2px_white]"
                 data-aos="zoom-in"
                 data-aos-delay="600"
               >
                 เอกลักษณ์
               </h2>
               <div
-                className="text-center text-2xl lg:text-3xl mt-3 font-semibold text-cyan-600"
+                className="text-center text-2xl lg:text-3xl mt-3 font-semibold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]"
                 data-aos="zoom-in"
                 data-aos-delay="750"
               >
