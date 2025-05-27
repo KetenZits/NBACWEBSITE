@@ -7,6 +7,7 @@ import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 import Squares from "../components/SquareBackground/Square";
 import Magnet from "../components/Magnet/Magnet";
+import FollowCursor from "../components/FollowCursor/FollowCursor";
 import {
   MapPin,
   Phone,

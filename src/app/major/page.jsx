@@ -83,7 +83,7 @@ const page = () => {
           <div className="max-w-7xl mx-auto">
             <div className="relative">
               {/* Carousel Container */}
-              <div className="overflow-hidden rounded-2xl">
+              <div className="overflow-hidden rounded-2xl bg-white/30 backdrop-blur-md ring-2 ring-white/80">
                 <div
                   className="flex transition-transform duration-700 ease-in-out"
                   style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -119,7 +119,7 @@ const page = () => {
                                 </p>
                               </div>
                             </div>
-                            <blockquote className="text-xl lg:text-2xl leading-relaxed mb-8 font-light text-pink-400">
+                            <blockquote className="text-xl lg:text-2xl leading-relaxed mb-8 font-light text-pink-400 w-9/12">
                               {testimonial.quote}
                             </blockquote>
 
@@ -134,10 +134,10 @@ const page = () => {
               {/* Navigation Arrows */}
               <button
                 onClick={prevSlide}
-                className="hidden absolute sm:left-10 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 backdrop-blur-md border border-white/20 rounded-full sm:flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 group z-30"
+                className="hidden absolute sm:left-10 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/80 backdrop-blur-md border border-white/70 rounded-full sm:flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 group z-30"
               >
                 <svg
-                  className="w-6 h-6 group-hover:-translate-x-1 transition-transform duration-300"
+                  className="w-6 h-6 group-hover:-translate-x-1 transition-transform duration-300 text-black"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -153,10 +153,10 @@ const page = () => {
 
               <button
                 onClick={nextSlide}
-                className="hidden absolute sm:right-10 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 backdrop-blur-md border border-white/20 rounded-full sm:flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 group z-30"
+                className="hidden absolute sm:right-10 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/80 backdrop-blur-md border border-white/70 rounded-full sm:flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 group z-30"
               >
                 <svg
-                  className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300"
+                  className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300 text-black"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -179,8 +179,8 @@ const page = () => {
                   onClick={() => setCurrentSlide(index)}
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${
                     index === currentSlide
-                      ? "bg-yellow-400 scale-125"
-                      : "bg-white/30 hover:bg-white/50"
+                      ? "bg-pink-400 scale-125"
+                      : "bg-blue-400/80 hover:bg-blue-400/50"
                   }`}
                 />
               ))}
