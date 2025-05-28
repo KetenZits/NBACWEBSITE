@@ -5,9 +5,7 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
-import Squares from "../components/SquareBackground/Square";
 import Magnet from "../components/Magnet/Magnet";
-import FollowCursor from "../components/FollowCursor/FollowCursor";
 import {
   MapPin,
   Phone,
@@ -110,7 +108,7 @@ const Department = () => {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-pink-50 to-blue-100 relative overflow-hidden">
+      <div className="min-h-[75vh] bg-gradient-to-br from-blue-50 via-pink-50 to-blue-100 relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-20 left-20 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-pink-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
@@ -118,7 +116,6 @@ const Department = () => {
         </div>
         {/* Grid Pattern Overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(236,72,153,0.05)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
-
         <div className="relative z-10">
           {/* Header Section */}
           <div className="pt-20 pb-12 px-4 sm:px-6 lg:px-8">
@@ -126,7 +123,7 @@ const Department = () => {
               <Magnet padding={50} disabled={false} magnetStrength={5}>
                 <div className="inline-flex items-center gap-2 bg-white/60 backdrop-blur-sm border border-blue-200 rounded-full px-6 py-2 mb-6">
                   <Star className="w-4 h-4 text-blue-500" />
-                  <span className="text-sm text-blue-700">Another Department</span>
+                  <span className="text-sm text-blue-700">Department</span>
                 </div>
               </Magnet>
 
@@ -140,7 +137,7 @@ const Department = () => {
           </div>
 
           <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12 mb-16">
+            <div className="grid lg:grid-cols-2 gap-6 mb-16">
               {/* Contact Information */}
               <div className="space-y-6 ">
                 {contactInfo1.map((info, index) => (

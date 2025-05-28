@@ -141,7 +141,7 @@ const ContactPage = () => {
           </div>
 
           <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12 mb-16">
+            <div className="grid lg:grid-cols-2 gap-6 mb-16">
               {/* Contact Information */}
               <div className="space-y-6 ">
                 {contactInfo1.map((info, index) => (

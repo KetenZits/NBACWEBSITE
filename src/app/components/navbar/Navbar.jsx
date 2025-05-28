@@ -21,7 +21,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="z-50">
+    <div className="z-200">
       <div className="flex justify-evenly items-center p-2 background-color-white shadow-xl max-h-[110px]">
         <div
           className="flex justify-center items-center space-x-2"
