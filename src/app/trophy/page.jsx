@@ -33,7 +33,7 @@ const page = () => {
     { id: "academic", name: "วิชาการ", icon: <BookOpen className="w-4 h-4" /> },
     { id: "photo", name: "ภาพถ่าย", icon: <Camera className="w-4 h-4" /> },
   ];
-
+  //เพิ่มข้อมูลผลงานนักเรียน
   const portfolios = [
     {
       id: 1,
@@ -125,8 +125,23 @@ const page = () => {
       tags: ["Web Development", "Next.js", "React"],
       award: "รางวัลนวัตกรรมดีเด่น",
     },
+    {
+      id: 7,
+      title: "ค้นพบสูตรฟิสิกส์ใหม่",
+      student: "นายฟิสิกส์ แสนรู้",
+      class: "ม.6/3",
+      category: "science",
+      image:
+        "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop",
+      description: "ค้นพบสูตรฟิสิกส์ใหม่เกี่ยวกับแรงโน้มถ่วงและควอนตัม",
+      likes: 15000,
+      views: 20000,
+      date: "2024-04-015",
+      tags: ["science", "physic"],
+      award: "รางวัลโนเบลสาขาฟิสิกส์",
+    },
   ];
-
+  //เพิ่มข้อมูลผลงานนักเรียน
   const filteredPortfolios = portfolios.filter((portfolio) => {
     const matchesFilter =
       activeFilter === "all" || portfolio.category === activeFilter;
@@ -139,16 +154,14 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-pink-50 to-indigo-100">
-        {/* Background Effects */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-20 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-40 right-20 w-80 h-80 bg-pink-400/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-          <div className="absolute top-1/2 left-1/2 w-72 h-72 bg-purple-400/10 rounded-full blur-3xl animate-pulse delay-2000"></div>
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-pink-50 to-blue-100 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-20 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-pink-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-purple-400/20 rounded-full blur-3xl animate-pulse delay-2000"></div>
         </div>
-
-        {/* Grid Pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(236,72,153,0.03)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
+        {/* Grid Pattern Overlay */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(236,72,153,0.05)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
 
         <div className="relative z-10">
           {/* Header */}
