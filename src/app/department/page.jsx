@@ -77,30 +77,30 @@ const Department = () => {
 
   const contactInfo1 = [
     {
-      icon: <MapPin className="w-6 h-6" />,
-      title: "Address",
-      details: ["123 School Road", "test, Thailand 10110"],
+      icon: <School className="w-6 h-6" />,
+      title: "แผนกอนุบาล",
+      details: ["กดเพื่อดูข้อมูลเพิ่มเติม", "Click for more info"],
       color: "text-pink-500",
     },
     {
-      icon: <Phone className="w-6 h-6" />,
-      title: "Phone",
-      details: ["Main: 081-234-5678", "Admissions: 081-234-5679"],
+      icon: <School className="w-6 h-6" />,
+      title: "แผนกประถม",
+      details: ["กดเพื่อดูข้อมูลเพิ่มเติม", "Click for more info"],
       color: "text-blue-500",
     },
   ];
 
   const contactInfo2 = [
     {
-      icon: <Mail className="w-6 h-6" />,
-      title: "Email",
-      details: ["test@school.ac.th", "test@school.ac.th"],
+      icon: <School className="w-6 h-6" />,
+      title: "แผนกมัธยม",
+      details: ["กดเพื่อดูข้อมูลเพิ่มเติม", "Click for more info"],
       color: "text-purple-500",
     },
     {
-      icon: <Clock className="w-6 h-6" />,
-      title: "Office Hours",
-      details: ["Mon-Fri: 8:00 AM - 4:00 PM", "Sat: 9:00 AM - 12:00 PM"],
+      icon: <School className="w-6 h-6" />,
+      title: "แผนกวิทยาลัย",
+      details: ["กดเพื่อดูข้อมูลเพิ่มเติม", "Click for more info"],
       color: "text-indigo-500",
     },
   ];
