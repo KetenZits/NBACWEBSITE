@@ -4,6 +4,18 @@ import React from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import Navbar from "../components/navbar/Navbar";
+import Footer from "../components/footer/Footer"
+import Magnet from "../components/Magnet/Magnet";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  MessageCircle,
+  Send,
+  Star,
+  FileText
+} from "lucide-react";
 
 const detail = () => {
 
@@ -29,8 +41,27 @@ const detail = () => {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(236,72,153,0.05)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
         <div className="relative z-10">
           
+
+          <div className="pt-20 pb-12 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto text-center">
+              <Magnet padding={50} disabled={false} magnetStrength={5}>
+                <div className="inline-flex items-center gap-2 bg-white/60 backdrop-blur-sm border border-blue-200 rounded-full px-6 py-2 mb-6">
+                  <FileText className="w-4 h-4 text-blue-500" />
+                  <span className="text-sm text-blue-700">Trophy</span>
+                </div>
+              </Magnet>
+
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-6 pt-5">
+                เกี่ยวกับวิทยาลัย
+              </h1>
+              <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                ข้อมูลต่างๆที่เกี่ยวกับวิทยาลัยของเรา 💫
+              </p>
+            </div>
+          </div>
         </div>
         </div>
+        <Footer />
       </>
   );
 };
