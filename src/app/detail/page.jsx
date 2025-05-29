@@ -7,14 +7,22 @@ import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer"
 import Magnet from "../components/Magnet/Magnet";
 import {
-  MapPin,
-  Phone,
-  Mail,
-  Clock,
-  MessageCircle,
-  Send,
   Star,
-  FileText
+  Award,
+  Eye,
+  Heart,
+  Filter,
+  Search,
+  Calendar,
+  User,
+  Trophy,
+  Camera,
+  Palette,
+  Code,
+  Music,
+  BookOpen,
+  Zap,
+  FileText,
 } from "lucide-react";
 
 const detail = () => {
@@ -52,7 +60,7 @@ const detail = () => {
               </Magnet>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-6 pt-5">
-                เกี่ยวกับวิทยาลัย
+                เกี่ยวกับวิทยาลัยเทคโนโลยีนาคประสิทธิ์
               </h1>
               <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
                 ข้อมูลต่างๆที่เกี่ยวกับวิทยาลัยของเรา 💫
