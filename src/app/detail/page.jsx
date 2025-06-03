@@ -82,32 +82,32 @@ const SchoolPage = () => {
   const historyData = [
     {
       year: "2510",
-      event: "ก่อตั้งโรงเรียน",
-      detail: "เริ่มต้นด้วยนักเรียน 50 คน ครู 3 ท่าน",
+      event: "testevent",
+      detail: "testdetail",
       color: "from-blue-400 to-purple-400",
     },
     {
       year: "2520",
-      event: "ขยายอาคารเรียน",
-      detail: "เพิ่มอาคาร 2 หลัง รองรับนักเรียนเพิ่มขึ้น",
+      event: "testevent",
+      detail: "testdetail",
       color: "from-purple-400 to-pink-400",
     },
     {
       year: "2535",
-      event: "ได้รับการรับรอง",
-      detail: "ผ่านเกณฑ์มาตรฐานการศึกษาระดับชาติ",
+      event: "testevent",
+      detail: "testdetail",
       color: "from-pink-400 to-blue-400",
     },
     {
       year: "2550",
-      event: "โครงการ ICT",
-      detail: "นำเทคโนโลยีเข้าสู่ห้องเรียน",
+      event: "testevent",
+      detail: "testdetail",
       color: "from-blue-400 to-cyan-400",
     },
     {
       year: "2567",
       event: "ปัจจุบัน",
-      detail: "มีนักเรียนกว่า 1,200 คน ครู 65 ท่าน",
+      detail: "testdetail",
       color: "from-cyan-400 to-pink-400",
     },
   ];
@@ -141,9 +141,9 @@ const SchoolPage = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCounters((prev) => ({
-        students: prev.students < 1200 ? prev.students + 25 : 1200,
-        years: prev.years < 57 ? prev.years + 1 : 57,
-        teachers: prev.teachers < 65 ? prev.teachers + 1 : 65,
+        students: prev.students < 999 ? prev.students + 20 : 1000,
+        years: prev.years < 99 ? prev.years + 1 : 99,
+        teachers: prev.teachers < 99 ? prev.teachers + 1 : 99,
       }));
     }, 50);
 
@@ -183,7 +183,7 @@ const SchoolPage = () => {
               NBAC
             </h1>
             <p className="text-xl mb-8 text-blue-100">
-              มุ่งสู่ความเป็นเลิศทางการศึกษา เพื่ออนาคตที่สดใส
+              สร้างเสริมคุณธรรม ก้าวนำการเรียนรู้ พัฒนาสู่มาตรฐานวิชาชีพ
             </p>
 
             {/* Stats Cards */}

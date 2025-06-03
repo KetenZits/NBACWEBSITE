@@ -241,7 +241,7 @@ const Activity = () => {
             data-aos="fade-up"
           >
             <div className="stat">
-              <div className="stat-figure text-primary">
+              <div className="stat-figure text-info">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -258,7 +258,7 @@ const Activity = () => {
                 </svg>
               </div>
               <div className="stat-title">นักเรียนชาย</div>
-              <div className="stat-value text-primary text-4xl">
+              <div className="stat-value text-info text-4xl">
                 <CountUp
                   from={0}
                   to={157}
