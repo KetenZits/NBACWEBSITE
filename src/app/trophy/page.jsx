@@ -20,6 +20,7 @@ import {
   BookOpen,
   Zap,
 } from "lucide-react";
+import Magnet from "../components/Magnet/Magnet";
 
 const page = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -167,10 +168,12 @@ const page = () => {
           {/* Header */}
           <div className="pt-20 pb-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto text-center">
+              <Magnet padding={50} disabled={false} magnetStrength={5}>
               <div className="inline-flex items-center gap-2 bg-white/60 backdrop-blur-sm border border-blue-200 rounded-full px-6 py-2 mb-6">
                 <Trophy className="w-4 h-4 text-blue-500" />
                 <span className="text-sm text-blue-700">Student Showcase</span>
               </div>
+              </Magnet>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-6">
                 ผลงานนักเรียน

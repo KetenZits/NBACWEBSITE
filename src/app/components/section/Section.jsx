@@ -74,14 +74,14 @@ const Section = () => {
           <div className="mt-5">
             <div className="mt-4">
               <h2
-                className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent text-center drop-shadow-[0_0_2px_white]"
+                className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent text-center drop-shadow-[0_0_3px_pink]"
                 data-aos="zoom-in"
                 data-aos-delay="600"
               >
                 วิสัยทัศน์
               </h2>
               <div
-                className="text-center text-2xl lg:text-3xl mt-3 font-semibold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]"
+                className="text-center text-2xl lg:text-3xl mt-3 font-semibold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_3px_pink]"
                 data-aos="zoom-in"
                 data-aos-delay="750"
               >
@@ -91,14 +91,14 @@ const Section = () => {
             </div>
             <div className="mt-4">
               <h2
-                className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent text-center drop-shadow-[0_0_2px_white]"
+                className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent text-center drop-shadow-[0_0_3px_pink]"
                 data-aos="zoom-in"
                 data-aos-delay="600"
               >
                 ปรัชญา
               </h2>
               <div
-                className="text-center text-2xl lg:text-3xl mt-3 font-semibold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]"
+                className="text-center text-2xl lg:text-3xl mt-3 font-semibold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_3px_pink]"
                 data-aos="zoom-in"
                 data-aos-delay="750"
               >
@@ -107,14 +107,14 @@ const Section = () => {
             </div>
             <div className="mt-4">
               <h2
-                className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent text-center drop-shadow-[0_0_2px_white]"
+                className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent text-center drop-shadow-[0_0_3px_pink]"
                 data-aos="zoom-in"
                 data-aos-delay="600"
               >
                 อัตลักษณ์
               </h2>
               <div
-                className="text-center text-2xl lg:text-3xl mt-3 font-semibold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]"
+                className="text-center text-2xl lg:text-3xl mt-3 font-semibold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_3px_pink]"
                 data-aos="zoom-in"
                 data-aos-delay="750"
               >
@@ -123,14 +123,14 @@ const Section = () => {
             </div>
             <div className="mt-4">
               <h2
-                className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent text-center drop-shadow-[0_0_2px_white]"
+                className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent text-center drop-shadow-[0_0_3px_pink]"
                 data-aos="zoom-in"
                 data-aos-delay="600"
               >
                 เอกลักษณ์
               </h2>
               <div
-                className="text-center text-2xl lg:text-3xl mt-3 font-semibold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]"
+                className="text-center text-2xl lg:text-3xl mt-3 font-semibold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_3px_pink]"
                 data-aos="zoom-in"
                 data-aos-delay="750"
               >

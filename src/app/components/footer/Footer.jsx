@@ -91,15 +91,14 @@ const Footer = () => {
 
             {/* YouTube */}
             <a className="group relative p-3 bg-white/40 rounded-xl backdrop-blur-sm border border-white/50 hover:bg-red-500 hover:scale-110 transform transition-all duration-300 shadow-lg hover:shadow-xl">
-              <div className="absolute inset-0 bg-gradient-to-r from-red-400 to-red-600 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="relative fill-current text-slate-800 group-hover:text-white transition-colors duration-300"
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-pink-4 00 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              viewBox="0 0 448 512"
+              className="w-6 h-6 relative z-10 text-gray-800 group-hover:text-white transition-colors duration-300"
+              fill="currentColor"
               >
-                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                <path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/>
               </svg>
             </a>
 

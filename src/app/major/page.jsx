@@ -64,7 +64,7 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <div className="relative min-h-screen bg-gradient-to-br from-white via-blue-400/25 to-pink-300/35 overflow-hidden">
+      <div className="relative min-h-screen bg-gradient-to-br from-blue-300/55 to-pink-300/55 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,white_1px,transparent_0)] bg-[length:50px_50px]"></div>
