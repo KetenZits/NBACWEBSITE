@@ -61,7 +61,7 @@ const Footer = () => {
             <p className="text-sm opacity-80 italic">Main Site at NBAC</p>
             <div className="mt-4 p-3 bg-white/30 rounded-lg backdrop-blur-sm border border-white/40">
               <p className="text-sm font-medium">
-                🚀 Develop & Design Website :{" "}
+                🚀 Power & Develop By :{" "}
                 <span className="font-bold text-slate-900">Thanapon</span>
               </p>
             </div>
@@ -89,9 +89,9 @@ const Footer = () => {
               </svg>
             </a>
 
-            {/* YouTube */}
+            {/* tiktok */}
             <a className="group relative p-3 bg-white/40 rounded-xl backdrop-blur-sm border border-white/50 hover:bg-red-500 hover:scale-110 transform transition-all duration-300 shadow-lg hover:shadow-xl">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-pink-4 00 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-pink-400 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <svg 
               xmlns="http://www.w3.org/2000/svg" 
               viewBox="0 0 448 512"

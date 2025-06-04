@@ -188,7 +188,7 @@ const Activity = () => {
                 25 มีนาคม 2568
               </span>
               <div className="">
-                <div className="font-medium hover:underline hover:text-blue-400 text-left">
+                <div className="font-medium hover:underline hover:text-blue-600 text-left">
                   ประกาศผลสอบ นักเรียนชั้น ปวช.1 2 3
                 </div>
               </div>
@@ -202,7 +202,7 @@ const Activity = () => {
                 25 มีนาคม 2568
               </span>
               <div className="">
-                <div className="font-medium hover:underline hover:text-blue-400 text-left">
+                <div className="font-medium hover:underline hover:text-blue-600 text-left">
                   ประกาศผลสอบ นักเรียนชั้น ปวช.1 2 3
                 </div>
               </div>
@@ -216,7 +216,7 @@ const Activity = () => {
                 25 มีนาคม 2568
               </span>
               <div className="">
-                <div className="font-medium hover:underline hover:text-blue-400 text-left">
+                <div className="font-medium hover:underline hover:text-blue-600 text-left">
                   ประกาศผลสอบ นักเรียนชั้น ปวช.1 2 3
                 </div>
               </div>
