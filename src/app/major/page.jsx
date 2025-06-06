@@ -119,7 +119,7 @@ const page = () => {
                                 </p>
                               </div>
                             </div>
-                            <blockquote className="text-xl lg:text-2xl leading-relaxed mb-8 font-light text-pink-400 w-9/12">
+                            <blockquote className="text-xl lg:text-2xl leading-relaxed mb-8  w-9/12 bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent font-semibold">
                               {testimonial.quote}
                             </blockquote>
 
