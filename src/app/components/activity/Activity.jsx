@@ -48,6 +48,9 @@ const Activity = () => {
           </div>
           <div className="card rounded-box grid h-20 place-items-center"></div>
         </div>
+
+        <div className='my-5'>
+        <div className='text-center text-4xl font-bold bg-gradient-to-r from-pink-400 to-blue-400 bg-clip-text text-transparent' data-aos="zoom-in">FACEBOOK</div>
         <div
           className="grid grid-cols-1 lg:grid-cols-3 gap-5 place-items-center justify-center items-center bg-gradient-to-r from-pink-200 to-blue-200 rounded-2xl py-10 px-5 mt-10 ring-2 ring-blue-500/50"
           data-aos="zoom-in"
@@ -135,6 +138,99 @@ const Activity = () => {
               </div>
             </div>
           </div>
+        </div>
+        </div>
+
+        <div className='my-10'>
+        <div className='text-center text-4xl font-bold bg-gradient-to-r from-pink-400 to-blue-400 bg-clip-text text-transparent' data-aos="zoom-in">TIKTOK</div>
+        <div
+          className="grid grid-cols-1 lg:grid-cols-3 gap-5 place-items-center justify-center items-center bg-gradient-to-r from-pink-200 to-blue-200 rounded-2xl py-10 px-5 mt-10 ring-2 ring-blue-500/50"
+          data-aos="zoom-in"
+        >
+          <div
+            className="card bg-white/30 backdrop-blur-md w-80 shadow-sm ring-2 ring-white/80"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <figure className="px-10 pt-10">
+              <img
+                src="/img/activity/activity1.jpg"
+                alt="Shoes"
+                className="rounded-xl"
+              />
+            </figure>
+            <div className="card-body items-center text-center">
+              <h2 className="card-title font-extrabold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]">
+                กิจกรรมเข้าค่ายลูกเสือ
+              </h2>
+              <p className="font-bold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]">
+                A card component has a figure, a body part, and inside body
+                there are title and actions parts
+              </p>
+              <div className="card-actions mt-3">
+                <button className="btn text-white hover:scale-110 transition bg-gradient-to-r from-fuchsia-400 to-blue-400">
+                  ดูเพิ่มเติม
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="card bg-white/30 backdrop-blur-md w-80 shadow-sm ring-2 ring-white/80"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <figure className="px-10 pt-10">
+              <img
+                src="/img/activity/activity2.jpg"
+                alt="Shoes"
+                className="rounded-xl"
+              />
+            </figure>
+            <div className="card-body items-center text-center">
+              <h2 className="card-title font-extrabold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]">
+                กิจกรรมปัจฉิมนิเทศ
+              </h2>
+              <p className="font-bold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]">
+                A card component has a figure, a body part, and inside body
+                there are title and actions parts
+              </p>
+              <div className="card-actions mt-3">
+                <button className="btn text-white hover:scale-110 transition bg-gradient-to-r from-fuchsia-400 to-blue-400">
+                  ดูเพิ่มเติม
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="card bg-white/30 backdrop-blur-md w-80 shadow-sm ring-2 ring-white/80"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <figure className="px-10 pt-10">
+              <img
+                src="/img/activity/activity3.jpg"
+                alt="Shoes"
+                className="rounded-xl"
+              />
+            </figure>
+            <div className="card-body items-center text-center">
+              <h2 className="card-title font-extrabold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]">
+                กิจกรรมวันเด็กแห่งชาติ
+              </h2>
+              <p className="font-bold bg-gradient-to-r from-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_2px_white]">
+                A card component has a figure, a body part, and inside body
+                there are title and actions parts
+              </p>
+              <div className="card-actions mt-3">
+                <button className="btn text-white hover:scale-110 transition bg-gradient-to-r from-fuchsia-400 to-blue-400">
+                  ดูเพิ่มเติม
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
 
         <div className="flex w-full flex-col">

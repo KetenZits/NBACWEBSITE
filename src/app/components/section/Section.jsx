@@ -10,6 +10,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Section = () => {
+
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     AOS.init({
       duration: 1000, // ระยะเวลาของแอนิเมชัน (ms)
@@ -18,6 +22,24 @@ const Section = () => {
     });
   }, []);
 
+  //fetch API
+   useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+        const json = await res.json();
+        console.log(json);
+        setData(json);
+      } catch (err) {
+        console.error("Error : ", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchData();
+  }, []); // [] คือรันแค่ตอน mount
+  //fetch API
+  
   return (
     <div
       className="
