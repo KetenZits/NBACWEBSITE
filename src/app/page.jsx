@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { gsap } from "gsap"; 
 import SplitText from "./components/SplitText/SplitText";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -50,7 +51,7 @@ export default function WelcomePage() {
         <SplitText
           text="NBAC WEBSITE"
           className="font-semibold text-center"
-          delay={150}
+          delay={200}
           animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
           animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
           easing="easeOutCubic"
