@@ -19,41 +19,11 @@ import {
 } from "lucide-react";
 
 const ContactPage = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
-  });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Handle form submission here
-    alert("ขอบคุณสำหรับข้อความค่ะ! เราจะติดต่อกลับโดยเร็วที่สุด 💕");
-  };
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
   const socialLinks = [
-    {
-      name: "LINE",
-      icon: "💬",
-      url: "#",
-      handle: "@school_official",
-      color: "from-green-400 to-green-600",
-      hoverColor: "hover:shadow-green-500/25",
-    },
     {
       name: "Facebook",
       icon: "📘",
-      url: "#",
+      url: "https://www.facebook.com/nakprasith.nbac",
       handle: "School Official Page",
       color: "from-blue-500 to-blue-700",
       hoverColor: "hover:shadow-blue-500/25",
@@ -61,18 +31,10 @@ const ContactPage = () => {
     {
       name: "TikTok",
       icon: "🎵",
-      url: "#",
+      url: "https://www.tiktok.com/@nbac2561?referer_url=www.np.ac.th%2Fnbac%2F&refer=embed&embed_source=121374463%2C121468991%2C121439635%2C121749182%2C121433650%2C121404359%2C121497414%2C121477481%2C121351166%2C121772353%2C121487028%2C121331973%2C120811592%2C120810756%2C121503376%3Bnull%3Bembed_name&referer_video_id=7514906583135014162",
       handle: "@school_tiktok",
       color: "from-pink-500 to-purple-600",
       hoverColor: "hover:shadow-pink-500/25",
-    },
-    {
-      name: "Instagram",
-      icon: "📸",
-      url: "#",
-      handle: "@school_insta",
-      color: "from-purple-500 to-pink-500",
-      hoverColor: "hover:shadow-purple-500/25",
     },
   ];
 
@@ -80,13 +42,16 @@ const ContactPage = () => {
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Address",
-      details: ["123 School Road", "test, Thailand 10110"],
+      details: [
+        "97/1 หมู่ที่ 3 ตำบลคลองใหม่",
+        "อำเภอสามพราน จังหวัดนครปฐม รหัสไปรษณีย์ 73110",
+      ],
       color: "text-pink-500",
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone",
-      details: ["Main: 081-234-5678", "Admissions: 081-234-5679"],
+      details: ["โทรศัพท์ : 034-311263", "โทรสาร : 034-222392"],
       color: "text-blue-500",
     },
   ];
@@ -95,13 +60,13 @@ const ContactPage = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      details: ["test@school.ac.th", "test@school.ac.th"],
+      details: ["nakprasith@yahoo.com", "nakprasith.nbac@gmail.com"],
       color: "text-purple-500",
     },
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Office Hours",
-      details: ["Mon-Fri: 8:00 AM - 4:00 PM", "Sat: 9:00 AM - 12:00 PM"],
+      details: ["Mon-Fri: 7:30 - 17:00", "Sat-Sun: Closed"],
       color: "text-indigo-500",
     },
   ];
@@ -255,7 +220,7 @@ const ContactPage = () => {
                 </p>
               </div>
 
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6">
                 {socialLinks.map((social, index) => (
                   <a
                     key={index}
@@ -297,11 +262,14 @@ const ContactPage = () => {
                   Our School
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  123 School Road, Bangkok, Thailand 10110
+                  97/1 หมู่ที่ 3 ตำบลคลองใหม่ อำเภอสามพราน จังหวัดนครปฐม
+                  รหัสไปรษณีย์ 73110
                 </p>
-                <button className="bg-gradient-to-r from-blue-400 to-pink-400 hover:from-blue-600 hover:to-pink-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/25 hover:scale-105">
-                  Get Directions
-                </button>
+                <a href="https://www.google.com/maps?sca_esv=1c107907336dff37&rlz=1C1CHBD_thTH1051TH1051&output=search&q=nakprasith&source=lnms&fbs=AIIjpHw3uEc_vWK5vSvV-p1nHk_D1Bk8j4zJBmmn4Uawh54E7cCUeh-da3tmmqNHhpB8AkmHLyIh8IFyoyKstF3rMbOvWvMnnL36uAa7TDDEWw3niiZe0KCxRMDuOScTprGqeM1MyEuXll9i5--zCkKRE9_aylO3O2blc1UGOaSg7WZQc5Of8uCW9BlOXux8q3NTg7VGJdGQWAk8w_DGIgxQLyQZ6XD6fZ2mSc_BVpjh9_x2uESSYUUoQGKTDjcB1sOzJtl39EWrkDjn_q9MZXbsfpBe5E1gvWHI_hFXiig-KdUahSUDVLY&entry=mc&ved=1t:200715&ictx=111">
+                  <button className="bg-gradient-to-r from-blue-400 to-pink-400 hover:from-blue-600 hover:to-pink-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/25 hover:scale-105">
+                    Get Directions
+                  </button>
+                </a>
               </div>
             </div>
           </div>

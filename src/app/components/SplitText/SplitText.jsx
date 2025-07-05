@@ -1,3 +1,5 @@
+"use client";
+
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -50,7 +52,7 @@ const SplitText = ({
     }
 
     targets.forEach((t) => {
-      (t).style.willChange = "transform, opacity";
+      t.style.willChange = "transform, opacity";
     });
 
     const startPct = (1 - threshold) * 100;
