@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
-import { gsap } from "gsap"; 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitText from "./components/SplitText/SplitText";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -60,10 +61,10 @@ export default function WelcomePage() {
         />
       </div>
       <a
-        onClick={() => router.push("./home")}
         data-aos="zoom-in"
         className="bg-white text-blue-400 hover:text-pink-400 cursor-pointer font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 transition ring-2 ring-blue-500/50 hover:ring-pink-500/50"
         data-aos-delay="450"
+        href="/home"
       >
         เข้าสู่เว็บไซต์
       </a>

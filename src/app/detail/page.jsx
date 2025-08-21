@@ -31,19 +31,21 @@ const SchoolPage = () => {
   const pdfFiles = [
     {
       id: 1,
-      name: "หลักสูตรการเรียนการสอน 2567",
+      name: "หลักสูตรการเรียนการสอนบัญชี 2562",
       category: "curriculum",
       size: "2.3 MB",
       downloads: 245,
       date: "2024-01-15",
+      url: "/pdf/plan_accounting.pdf",
     },
     {
       id: 2,
-      name: "ระเบียบการแต่งกาย",
+      name: "ข้อมูลครู",
       category: "rules",
       size: "1.1 MB",
       downloads: 189,
       date: "2024-02-01",
+      url: "/pdf/info_teachers.pdf"
     },
     {
       id: 3,
@@ -482,46 +484,49 @@ const SchoolPage = () => {
   </div>
 )}
       </div>
-
       {/* PDF Modal */}
-      <dialog id="pdf_modal" className="modal">
-        <div className="modal-box w-11/12 max-w-5xl h-5/6 bg-white/95 backdrop-blur-md border border-white/50 rounded-3xl">
-          <button
-            className="btn btn-sm btn-circle btn-ghost absolute right-4 top-4 hover:bg-red-100 hover:text-red-600"
-            onClick={() => document.getElementById("pdf_modal").close()}
-          >
-            ✕
-          </button>
-          {selectedPdf && (
-            <div className="pt-8">
-              <h3 className="font-bold text-2xl mb-6 text-gray-800">
-                {selectedPdf.name}
-              </h3>
-              <div className="bg-gradient-to-br from-gray-50 to-gray-100 h-full rounded-2xl flex items-center justify-center border border-gray-200">
-                <div className="text-center">
-                  <div className="bg-gradient-to-r from-blue-500 to-purple-500 w-32 h-32 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-xl">
-                    <FileText className="w-16 h-16 text-white" />
-                  </div>
-                  <p className="text-xl text-gray-700 mb-2">
-                    PDF Preview จะแสดงที่นี่
-                  </p>
-                  <p className="text-gray-500 mb-8">
-                    ในการใช้งานจริงสามารถใช้ PDF viewer library
-                  </p>
-                  <button className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-semibold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                    <Download className="w-5 h-5 mr-3 inline" />
+        <dialog id="pdf_modal" className="modal">
+          <div className="modal-box w-11/12 max-w-5xl h-[90vh] bg-white/95 backdrop-blur-md border border-white/50 rounded-3xl flex flex-col">
+            {/* ปุ่มปิด */}
+            <button
+              className="btn btn-sm btn-circle btn-ghost absolute right-4 top-4 hover:bg-red-100 hover:text-red-600"
+              onClick={() => document.getElementById("pdf_modal").close()}
+            >
+              ✕
+            </button>
+            {selectedPdf && (
+              <div className="flex flex-col h-full pt-8">
+                {/* Title */}
+                <h3 className="font-bold text-2xl mb-4 text-gray-800">
+                  {selectedPdf.name}
+                </h3>
+                {/* PDF Viewer */}
+                <div className="flex-1 border border-gray-200 rounded-xl overflow-hidden">
+                  <iframe
+                    src={selectedPdf.url}
+                    className="w-full h-full"
+                  />
+                </div>
+                {/* Download Button */}
+                <div className="mt-4 text-right">
+                  <a
+                    href={selectedPdf.url}
+                    download
+                    className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-semibold py-3 px-6 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center gap-2"
+                  >
+                    <Download className="w-5 h-5" />
                     ดาวน์โหลดไฟล์
-                  </button>
+                  </a>
                 </div>
               </div>
-            </div>
-          )}
-        </div>
-        <div
-          className="modal-backdrop bg-black/50 backdrop-blur-sm"
-          onClick={() => document.getElementById("pdf_modal").close()}
-        ></div>
-      </dialog>
+            )}
+          </div>
+          {/* backdrop */}
+          <div
+            className="modal-backdrop bg-black/50 backdrop-blur-sm"
+            onClick={() => document.getElementById("pdf_modal").close()}
+          ></div>
+        </dialog>
       <Footer />
     </div>
   );
