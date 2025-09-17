@@ -176,7 +176,7 @@ const SchoolPage = () => {
 
       {/* Hero Section */}
       <div className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/90 via-purple-600/90 to-pink-600/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/70 via-purple-500/70 to-pink-500/70"></div>
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <div className="backdrop-blur-sm bg-white/10 rounded-3xl p-8 shadow-2xl border border-white/20">
             <h1 className="text-6xl font-black mb-6 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
