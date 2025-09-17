@@ -243,10 +243,7 @@ const page = () => {
                         รางวัล
                       </div>
                     )}
-                    <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs flex items-center gap-1">
-                      <Eye className="w-3 h-3" />
-                      {portfolio.views.toLocaleString()}
-                    </div>
+
                   </figure>
 
                   <div className="card-body p-6">
@@ -296,10 +293,6 @@ const page = () => {
                     {/* Footer */}
                     <div className="flex items-center justify-between pt-4 border-t border-blue-100">
                       <div className="flex items-center gap-4 text-gray-500">
-                        <div className="flex items-center gap-1">
-                          <Heart className="w-4 h-4" />
-                          <span className="text-sm">{portfolio.likes}</span>
-                        </div>
                         <div className="flex items-center gap-1">
                           <Calendar className="w-4 h-4" />
                           <span className="text-sm">{portfolio.date}</span>
